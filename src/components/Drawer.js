@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import Cursor from '../components/Cursor';
 import ModalContent from "./ModalContent";
 
-
+gsap.registerPlugin()
 
 function Modal(props) {
   const modalRef = createRef();
@@ -20,11 +20,11 @@ function Modal(props) {
           }
         })
         .set(modalRef.current, { autoAlpha: 1 })
-        .to(modalRef.current, { duration: 1, opacity: 1, width: '100%', easing: 'out'})
+        .to(modalRef.current, { duration: 0.8, opacity: 1, width: '100%', easing: 'power2.inOut'})
         .to(modalScrimRef.current, { duration: 0.25, autoAlpha: 1, y: 0 })
         .fromTo(
           modalCardRef.current,
-          { y: 20, autoAlpha: 0 },
+          { y: 0, autoAlpha: 1 },
           { duration: 1, y: 0, autoAlpha: 1 }
         );
     }
@@ -41,7 +41,7 @@ function Modal(props) {
       <Cursor />
       <div ref={modalScrimRef} className="modal__scrim" />
       <div ref={modalCardRef} className="modal__card">
-        <ModalContent/>
+        {props.modal ? <ModalContent modal={props.modal} /> : null}
       </div>
     </div>
   );

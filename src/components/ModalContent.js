@@ -6,17 +6,22 @@ function ModalContent(props) {
   const contentRef = createRef();
   const tl = useRef();
 
-  if (typeof document !== 'undefined') {
+  
 
-    var tlx = gsap.timeline({delay: 1.4}), 
+
+  
+
+  useEffect(() => {
+
+    if (typeof document !== 'undefined') {
+
+    var tlx = gsap.timeline({delay: 0}), 
     mySplitText = new SplitText("#menu-items", {type:"words,chars"}), 
     chars = mySplitText.chars; //an array of all the divs that wrap each character
 
     tlx.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
 
   }
-
-  useEffect(() => {
 
   }, []);
 
