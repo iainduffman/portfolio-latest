@@ -20,7 +20,7 @@ function Modal(props) {
           }
         })
         .set(modalRef.current, { autoAlpha: 1 })
-        .to(modalRef.current, { duration: 0.8, opacity: 1, width: '100%', easing: 'power2.inOut'})
+        .to(modalRef.current, { duration: 0.8, opacity: 1, width: '100%', ease: 'power2.inOut'})
         .to(modalScrimRef.current, { duration: 0.25, autoAlpha: 1, y: 0 })
         .fromTo(
           modalCardRef.current,
@@ -32,7 +32,7 @@ function Modal(props) {
 
   const close = e => {
     e.preventDefault();
-
+    
     tl.current.timeScale(2).reversed(props.modal);
   };
 
