@@ -35,7 +35,7 @@ function ModalContent(props) {
               className=""
               activeClassName=""
             >
-              Night Shoot
+              Mezzanotte
             </TransitionLink>
             </p>
 
