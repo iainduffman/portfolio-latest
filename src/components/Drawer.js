@@ -40,7 +40,7 @@ function Modal(props) {
     <div ref={modalRef} onClick={close} className="modal">
       <Cursor />
       <div ref={modalScrimRef} className="modal__scrim" />
-      <div ref={modalCardRef} className="modal__card">
+      <div ref={modalCardRef} className="modal__card h-screen flex">
         {props.modal ? <ModalContent modal={props.modal} /> : null}
       </div>
     </div>

@@ -37,13 +37,12 @@ html,body {
     background: none;
     z-index: 1;
     box-sizing: border-box;
-    padding: 5vmin;
-    margin: 5vmin;
+    /* padding: 5vmin;
+    margin: 5vmin; */
     transform: translateY()
   }
 
   .content {
-    height: 100%;
     overflow: hidden;
   }
 
