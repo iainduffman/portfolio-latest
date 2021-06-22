@@ -16,7 +16,7 @@ function ModalContent(props) {
     mySplitText = new SplitText("#menu-items", {type:"words,chars"}), 
     chars = mySplitText.chars; //an array of all the divs that wrap each character
 
-    tlx.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
+    tlx.from(chars, {duration: 0.5, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
 
   }
 
@@ -24,22 +24,79 @@ function ModalContent(props) {
 
   return (
     <div ref={mItems} id="menu-items" className="content menu-content-items m-auto text-left ml-40">
-      <TransitionLink
+      
+    <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700"><TransitionLink
               to="/about"
               exit={{
                 length: 2,
                 delay: 1.6
               }}
               entry={{ length: 1, delay: 0 }}
-              className="hover:text-gray-600"
-              activeClassName="border-b-2 border-gray-600"
+              className=""
+              activeClassName=""
             >
-              Onee
+              Sample 1
             </TransitionLink>
-        <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700">Biographie</p>
-        <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-red-700">Case Studies</p>
-        <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-blue-700">Resume</p>
-        <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-green-700">Contact</p>
+            </p>
+
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-purple-700"><TransitionLink
+              to="/contact"
+              exit={{
+                length: 2,
+                delay: 1.6
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+              Sample 2
+            </TransitionLink>
+            </p>
+
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-blue-700"><TransitionLink
+              to="/next"
+              exit={{
+                length: 2,
+                delay: 1.6
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+              Sample 3
+            </TransitionLink>
+            </p>
+
+
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-green-700"><TransitionLink
+              to="/last"
+              exit={{
+                length: 2,
+                delay: 1.6
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+              Sample 4
+            </TransitionLink>
+            </p>
+            
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
+              to="/lastone"
+              exit={{
+                length: 2,
+                delay: 1.6
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+              Sample 5
+            </TransitionLink>
+            </p>
+
+        
         <p className="text-opacity-70 text-white list-none text-6xl md:text-6xl lg:text-2xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700">Close</p>
     </div>
   );

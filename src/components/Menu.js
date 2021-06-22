@@ -21,7 +21,7 @@ export const Menu = () => {
       <div className="flex mb-20 justify-between menu">
       <div className="mr-8 text-md uppercase">
             <a href="#" onClick={btnClick}>
-              Open M
+              Menu Toggle Placehold
             </a>
             <Drawer modal={modal} setModal={setModal} />
           </div>
