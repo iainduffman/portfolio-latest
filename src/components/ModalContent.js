@@ -29,7 +29,7 @@ function ModalContent(props) {
               to="/about"
               exit={{
                 length: 2,
-                delay: 1.6
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
@@ -43,7 +43,7 @@ function ModalContent(props) {
               to="/contact"
               exit={{
                 length: 2,
-                delay: 1.6
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
@@ -57,7 +57,7 @@ function ModalContent(props) {
               to="/next"
               exit={{
                 length: 2,
-                delay: 1.6
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
@@ -72,7 +72,7 @@ function ModalContent(props) {
               to="/last"
               exit={{
                 length: 2,
-                delay: 1.6
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
@@ -86,7 +86,7 @@ function ModalContent(props) {
               to="/lastone"
               exit={{
                 length: 2,
-                delay: 1.6
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
