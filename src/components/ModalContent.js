@@ -1,4 +1,5 @@
 import React, { useRef, createRef, useEffect } from "react";
+import TransitionLink from 'gatsby-plugin-transition-link';
 import gsap from "gsap";
 import { SplitText } from "../components/SplitText";
 
@@ -23,6 +24,18 @@ function ModalContent(props) {
 
   return (
     <div ref={mItems} id="menu-items" className="content menu-content-items m-auto text-left ml-40">
+      <TransitionLink
+              to="/about"
+              exit={{
+                length: 2,
+                delay: 1.6
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className="hover:text-gray-600"
+              activeClassName="border-b-2 border-gray-600"
+            >
+              Onee
+            </TransitionLink>
         <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700">Biographie</p>
         <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-red-700">Case Studies</p>
         <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-blue-700">Resume</p>

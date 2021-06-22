@@ -35,7 +35,7 @@ function Modal(props) {
   const close = e => {
     e.preventDefault();
     tl.current = gsap.to('.menu-content-items', { delay: 0, opacity: 0, duration: 0.8, ease: 'power2.inOut', onComplete: changeProps})
-    tl.current = gsap.to(modalRef.current, {delay:0.2, duration: 0.8, opacity: 1, width: '0%', ease: 'power2.inOut'})
+    tl.current = gsap.to(modalRef.current, {delay:0.6, duration: 0.8, opacity: 1, width: '0%', ease: 'power2.inOut'})
     tl.current = gsap.set(modalScrimRef.current, { delay: 2, opacity: 0, visibility: 'hidden'})
     tl.current = gsap.set(modalRef.current, { delay:2, opacity: 0, visibility: 'hidden'})
     
