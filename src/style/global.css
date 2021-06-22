@@ -39,6 +39,7 @@ html,body {
     box-sizing: border-box;
     /* padding: 5vmin;
     margin: 5vmin; */
+    opacity: 0;
     transform: translateY()
   }
 
