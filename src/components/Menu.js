@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import TransitionLink from 'gatsby-plugin-transition-link';
 import { StaticImage } from "gatsby-plugin-image";
 import Drawer from "./Drawer";
-import IconBlack from "../images/artboard.inline.svg";
+import IconBlack from "../images/artboard-logo.inline.svg";
 
 export const Menu = () => {
 
