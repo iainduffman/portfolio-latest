@@ -69,17 +69,17 @@ const About = ({ transitionStatus }) => {
       });
 
 
-      gsap.set(".dummy-start-scroll-about", {height: 0});
+      gsap.set(".dummy-start-scroll-xxyy", {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
       tlprogressbardummyshow.to(".dummy-start-scroll-about", {height: 70, duration: 1, ease:"out"});
 
 
     var tl = gsap.timeline({delay: 1}), 
-    mySplitText = new SplitText("#quote-six", {type:"words,chars"}), 
+    mySplitText = new SplitText("#quote-xxyy", {type:"words,chars"}), 
     chars = mySplitText.chars; //an array of all the divs that wrap each character
 
-gsap.set("#quote-six", {perspective: 400});
+gsap.set("#quote-xxyy", {perspective: 400});
 
 tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out", stagger: 0.01}, "+=0");
 
@@ -140,7 +140,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
         <Menu />
         <div className="w-full h-full flex justify-center items-center realizzazioni">
           <div id="categories" className="leading-9 title w-full md:w-1/2 text-white">
-          <p id="quote-six" className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase">
+          <p id="quote-xxyy" className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase">
           __The scientific storytellig of the barber
           </p>
             <p ref={(el) => (textRefs.current[0] = el)} id="copy" className="overflow-hidden mt-8 text-gray-400" >Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
