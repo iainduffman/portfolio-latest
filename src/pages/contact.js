@@ -55,6 +55,7 @@ const About = ({ transitionStatus }) => {
         backgroundColor: '#ffffff'
       })
 
+
       gsap.to('progress', {
         value: 100,
         ease: 'none',
@@ -67,6 +68,10 @@ const About = ({ transitionStatus }) => {
         end: "bottom bottom",
       }
       });
+
+      // Tween logo colour
+      gsap.to("path#Combined-Shape", { fill: "#000", delay: 1 });
+      //
 
       gsap.set(".dummy-start-scroll-contact", {height: 0});
 
@@ -95,7 +100,12 @@ const About = ({ transitionStatus }) => {
         },
       });
 
+                  // Set logo colour
+                  gsap.set("path#Combined-Shape", { fill: "#000" });
+                  //
+
       gsap.to(".dummy-start-scroll-contact", {delay: 1, height: 0, duration: 0.5, ease:'back'});
+
 
       gsap.to(odd, {
         duration: 0.8,
@@ -131,7 +141,7 @@ const About = ({ transitionStatus }) => {
       
       <main className="container mx-auto px-2 md:px-0">
       <Helmet>
-      <body className="light-light" />
+      <body className="light-theme" />
       </Helmet>
       <div className="dummy-start-scroll-contact"></div>
       <progress max="100" value="0"></progress>

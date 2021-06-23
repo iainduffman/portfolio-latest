@@ -59,6 +59,23 @@ html,body {
 
 
 
+/* .tl-wrapper-status--exiting .myLogoWhite, .tl-wrapper-status--exiting .myLogoBlack {
+  opacity: 0;
+  transition: all 150ms ease;
+  transition-property: opacity, background-color, transform, border;
+  transition-delay: 0s;
+} */
+
+/* .tl-wrapper-status--entering .myLogoWhite, .tl-wrapper-status--entering .myLogoBlack {
+  opacity: 1;
+  transition: all 150ms ease;
+  transition-property: opacity, background-color, transform, border; 
+  
+} */
+
+.myLogoBlack {
+  position: relative;
+}
 
 
 /* End of test */

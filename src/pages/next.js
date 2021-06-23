@@ -66,6 +66,10 @@ const About = ({ transitionStatus }) => {
         }
       });
 
+      // Tween logo colour
+      gsap.to("path#Combined-Shape", { fill: "#000", delay: 1 });
+      //
+
       gsap.set(".dummy-start-scroll-next", {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
@@ -92,7 +96,11 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
         },
       });
 
+                  // Set logo colour
+                  gsap.set("path#Combined-Shape", { fill: "#000" });
+                  //
       gsap.to(".dummy-start-scroll-next", {delay: 1, height: 0, duration: 0.5, ease:'back'});
+
 
       gsap.to(odd, {
         duration: 0.8,
@@ -128,7 +136,7 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
       
       <main className="container mx-auto px-2 md:px-0">
       <Helmet>
-      <body className="light-light" />
+      <body className="light-theme" />
       </Helmet>
       <div className="dummy-start-scroll-next"></div>
       <progress max="100" value="0"></progress>

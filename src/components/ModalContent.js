@@ -25,7 +25,7 @@ function ModalContent(props) {
   return (
     <div ref={mItems} id="menu-items" className="content menu-content-items m-auto text-left ml-40">
     <p className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase">Projects</p>
-    <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700"><TransitionLink
+    {/* <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700"><TransitionLink
               to="/about"
               exit={{
                 length: 2,
@@ -37,7 +37,7 @@ function ModalContent(props) {
             >
               Mezzanotte
             </TransitionLink>
-            </p>
+            </p> */}
 
             <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-purple-700"><TransitionLink
               to="/contact"

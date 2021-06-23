@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import TransitionLink from 'gatsby-plugin-transition-link';
+import { StaticImage } from "gatsby-plugin-image";
 import Drawer from "./Drawer";
+import IconBlack from "../images/artboard.inline.svg";
 
 export const Menu = () => {
 
@@ -20,8 +22,11 @@ export const Menu = () => {
 
       <div className="flex mb-20 justify-between menu">
       <div className="mr-8 text-md uppercase">
-            <a href="#">
-              Logo
+            <a href="#" onClick={btnClick}>
+            <div class="svgLogo">
+            <IconBlack className="myLogoBlack"/>
+            
+            </div>
             </a>
             <Drawer modal={modal} setModal={setModal} />
           </div>
@@ -33,7 +38,7 @@ export const Menu = () => {
         <div className="flex">
           <div className="mr-8 text-md uppercase">
           <a href="#" onClick={btnClick}>
-              Open Menu
+          Menu
             </a>
           </div>
 

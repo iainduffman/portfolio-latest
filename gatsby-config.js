@@ -4,6 +4,14 @@ module.exports = {
   },
   plugins: [
   'gatsby-plugin-postcss',
+  {
+    resolve: "gatsby-plugin-react-svg",
+    options: {
+      rule: {
+        include: /\.inline\.svg$/
+      }
+    }
+  },
   'gatsby-plugin-transition-link',
   'gsap',
   `gatsby-plugin-image`,

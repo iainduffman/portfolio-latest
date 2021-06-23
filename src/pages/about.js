@@ -68,6 +68,9 @@ const About = ({ transitionStatus }) => {
       }
       });
 
+      // Tween logo colour
+      gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
+      //
 
       gsap.set(".dummy-start-scroll-about", {height: 0});
 
@@ -96,6 +99,10 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
           amount: 0.2,
         },
       });
+
+                  // Set logo colour
+                  gsap.set("path#Combined-Shape", { fill: "#fff" });
+                  //
 
       gsap.to(".dummy-start-scroll-about", {delay: 1, height: 0, duration: 0.5, ease:'back'});
 
