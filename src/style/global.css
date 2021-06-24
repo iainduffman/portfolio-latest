@@ -73,15 +73,6 @@ html,body {
   
 } */
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .light-theme .downloadLink, .light-theme .menuLeft {
   color: #000;
   transition:all 1s ease;
@@ -153,8 +144,6 @@ svg.menuLeftIcon {
   -moz-transition-delay:all 1s ease;
   -ms-transition-delay:all 1s ease;
   -o-transition-delay:all 1s ease;
-  animation-name: spin;
-  animation-play-state: paused;
 }
 
 .dark-theme .menuLeftIcon path {
@@ -222,7 +211,7 @@ svg.menuLeftIcon {
 }
 
 
-.tl-wrapper-status--exiting .phrase {
+.tl-wrapper-status--exiting .phrase, .tl-wrapper-status--exiting .home-opener {
 opacity: 0 !important;
 transition: all 1s ease;
 transition-property: opacity;
@@ -301,12 +290,23 @@ progress {
 
 /* Menu */
 
+
+#brief {opacity: 1;}
+
 #menu-items p.text-white.list-none.text-6xl.md\:text-6xl.lg\:text-8xl.font-thin.relative.overflow-hidden.uppercase.transform.phrase {
   height: 128px;
 }
 
 #menu-items p.text-white.list-none.text-6xl.md\:text-6xl.lg\:text-6xl.font-thin.relative.overflow-hidden.uppercase.transform.phrase {
   height: 92px;
+}
+
+#menu-items p {
+transition:color 0.5s ease;
+-webkit-transition-delay:all 1s ease;
+-moz-transition-delay:all 1s ease;
+-ms-transition-delay:all 1s ease;
+-o-transition-delay:all 1s ease;
 }
 
 .menuContainer { position: fixed; left: 0px; height: 100%; width: 0%; background: rgb(14 14 14); z-index: 999; opacity: 0;}
@@ -318,6 +318,12 @@ progress {
 
 
 /* Other */
+
+
+.home .realizzazioni {
+  position: relative;
+  top: -176px !important;
+}
 
 .dummy-start-scroll-next {
 

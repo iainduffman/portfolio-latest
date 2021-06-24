@@ -39,7 +39,22 @@ export const Menu = () => {
       
         <div className="flex">
           <div className="mr-8 text-md uppercase">
-          <IconBlack className="myLogoBlack"/>
+
+          <TransitionLink
+              to="/"
+              exit={{
+                length: 2,
+                delay: 1.4
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+            <IconBlack className="myLogoBlack"/>
+            </TransitionLink>
+
+
+         
           </div>
 
 
