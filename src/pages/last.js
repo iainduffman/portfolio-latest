@@ -9,6 +9,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const intTag = 'last';
+
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
   const textfly = (textRefs, direction) => {
@@ -73,6 +75,9 @@ const About = ({ transitionStatus }) => {
       //
 
       gsap.set(".dummy-start-scroll-last", {height: 0});
+
+
+
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
       tlprogressbardummyshow.to(".dummy-start-scroll-last", {height: 70, duration: 1, ease:"out"});
