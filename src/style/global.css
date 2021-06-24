@@ -73,8 +73,58 @@ html,body {
   
 } */
 
+
+
+.light-theme .menuLeft {
+  color: #000;
+  transition:all 1s ease;
+  -webkit-transition-delay:all 1s ease;
+  -moz-transition-delay:all 1s ease;
+  -ms-transition-delay:all 1s ease;
+  -o-transition-delay:all 1s ease;
+}
+
+.menuLeftWrapper p {
+  visibility: hidden;
+}
+
+svg.menuLeftIcon {
+  width: 32px;
+}
+
+.menuLeftIcon path {
+  transition:all 1s ease;
+  -webkit-transition-delay:all 1s ease;
+  -moz-transition-delay:all 1s ease;
+  -ms-transition-delay:all 1s ease;
+  -o-transition-delay:all 1s ease;
+}
+
+.dark-theme .menuLeftIcon path {
+  fill: #fff;
+}
+
+.light-theme .menuLeftIcon path {
+  fill: #000;
+}
+
+.dark-theme .menuLeft {
+  color: #fff;
+  transition:all 1s ease;
+  -webkit-transition-delay:all 1s ease;
+  -moz-transition-delay:all 1s ease;
+  -ms-transition-delay:all 1s ease;
+  -o-transition-delay:all 1s ease;
+}
+
+.menuLeft a {
+  font-weight: 600;
+}
+
+
 .myLogoBlack {
   position: relative;
+  z-index: -2;
 }
 
 
