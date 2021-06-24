@@ -305,6 +305,10 @@ progress {
   height: 128px;
 }
 
+#menu-items p.text-white.list-none.text-6xl.md\:text-6xl.lg\:text-6xl.font-thin.relative.overflow-hidden.uppercase.transform.phrase {
+  height: 92px;
+}
+
 .menuContainer { position: fixed; left: 0px; height: 100%; width: 0%; background: rgb(14 14 14); z-index: 999; opacity: 0;}
 
 .overlay { position: fixed; width: 100%; height: 100%; background: #000; opacity: 0.5; top: 0; opacity: 0;}

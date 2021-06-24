@@ -27,8 +27,8 @@ function ModalContent(props) {
   return (
     <div ref={mItems} id="menu-items" className="content menu-content-items m-auto text-left ml-40">
     <StaticImage src="../images/CloseButton.inline.svg" className="closeButton" />
-    <p className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-24">Projects</p>
-    <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700"><TransitionLink
+    <p className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-16">Projects</p>
+    <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700"><TransitionLink
               to="/about"
               exit={{
                 length: 2,
@@ -42,7 +42,7 @@ function ModalContent(props) {
             </TransitionLink>
             </p>
 
-            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-purple-700"><TransitionLink
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-purple-700"><TransitionLink
               to="/contact"
               exit={{
                 length: 2,
@@ -56,7 +56,7 @@ function ModalContent(props) {
             </TransitionLink>
             </p>
 
-            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-blue-700"><TransitionLink
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-blue-700"><TransitionLink
               to="/next"
               exit={{
                 length: 2,
@@ -71,7 +71,7 @@ function ModalContent(props) {
             </p>
 
 
-            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-green-700"><TransitionLink
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-green-700"><TransitionLink
               to="/last"
               exit={{
                 length: 2,
@@ -85,7 +85,7 @@ function ModalContent(props) {
             </TransitionLink>
             </p>
             
-            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
               to="/lastone"
               exit={{
                 length: 2,
@@ -99,7 +99,7 @@ function ModalContent(props) {
             </TransitionLink>
             </p>
 
-            <p className="text-white list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
               to="/chaps"
               exit={{
                 length: 2,
