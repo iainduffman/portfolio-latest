@@ -18,7 +18,7 @@ function ModalContent(props) {
     mySplitText = new SplitText("#menu-items", {type:"words,chars"}), 
     chars = mySplitText.chars; //an array of all the divs that wrap each character
 
-    tlx.from(chars, {duration: 0.5, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
+    tlx.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
 
   }
 
@@ -27,7 +27,7 @@ function ModalContent(props) {
   return (
     <div ref={mItems} id="menu-items" className="content menu-content-items m-auto text-left ml-40">
     <StaticImage src="../images/CloseButton.inline.svg" className="closeButton" />
-    <p className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-16">Projects</p>
+    <p className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-12">Projects</p>
     <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-yellow-700"><TransitionLink
               to="/about"
               exit={{
@@ -115,7 +115,7 @@ function ModalContent(props) {
 
         
         <p className="text-opacity-70 text-white list-none text-6xl md:text-6xl lg:text-2xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700">About</p>
-        <p className="text-opacity-70 text-white list-none text-6xl md:text-6xl lg:text-2xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700">Contact</p>
+        <p className="text-opacity-70 text-white list-none text-6xl md:text-6xl lg:text-2xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700">Resume</p>
     </div>
   );
 }
