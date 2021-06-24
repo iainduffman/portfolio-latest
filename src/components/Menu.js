@@ -43,7 +43,7 @@ export const Menu = () => {
               to="/"
               exit={{
                 length: 2,
-                delay: 0.4
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
@@ -83,7 +83,7 @@ export const Menu = () => {
               to="/about"
               exit={{
                 length: 2,
-                delay: 0.3
+                delay: 1.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""

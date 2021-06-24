@@ -72,10 +72,10 @@ const About = ({ transitionStatus }) => {
       gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
       //
 
-      gsap.set(".dummy-start-scroll-about", {height: 0});
+      gsap.set(".dummy-start-scroll-lastone", {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
-      tlprogressbardummyshow.to(".dummy-start-scroll-about", {height: 70, duration: 1, ease:"out"});
+      tlprogressbardummyshow.to(".dummy-start-scroll-lastone", {height: 70, duration: 1, ease:"out"});
 
 
     var tl = gsap.timeline({delay: 1}), 
@@ -142,7 +142,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
       <Helmet>
       <body className="dark-theme" />
       </Helmet>
-      <div className="dummy-start-scroll-about"></div>
+      <div className="dummy-start-scroll-lastone"></div>
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="w-full h-full flex justify-center items-center realizzazioni">
