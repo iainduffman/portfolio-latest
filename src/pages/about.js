@@ -155,7 +155,9 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/u2-op.jpg" alt="A dinosaur" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC02126.jpg" /></section>
+
+            <section ref={(el) => (textRefs.current[2] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC02131.jpg" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
@@ -173,7 +175,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/u3.jpg" alt="A dinosaur" /></section>
+            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02140.jpg" alt="A dinosaur" /></section>
 
             <p className="text-gray-400">
 
@@ -193,7 +195,9 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
           </div>
         </div>
 
-        <section className="default mt-16 mb-16"><StaticImage src="../images/u5.jpg" alt="A dinosaur" /></section>
+        <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02266-2.jpg" alt="" /></section>
+        <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02250.jpg" alt="" /></section>
+        <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02299.jpg" alt="" /></section>
 
       <div className="w-full h-full flex justify-center items-center realizzazioni">
       <div id="categories" className="leading-9 title w-full md:w-1/2">
