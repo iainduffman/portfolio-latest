@@ -72,7 +72,7 @@ const About = ({ transitionStatus }) => {
       gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
       //
 
-      gsap.set(".dummy-start-scroll-about", {height: 0});
+      gsap.set(".dummy-start-scroll-home", {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
       tlprogressbardummyshow.to(".dummy-start-scroll-about", {height: '100%', duration: 1, ease:"out"});
@@ -81,24 +81,23 @@ const About = ({ transitionStatus }) => {
     var tl = gsap.timeline({delay: 1}), 
     mySplitText = new SplitText("#quote-home", {type:"words,chars"}), 
     chars = mySplitText.chars; //an array of all the divs that wrap each character
-    tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out", stagger: 0.01}, "+=0");
-    gsap.set("#quote-home", {perspective: 400});
 
-    var tlBrief = gsap.timeline({delay: 1.5}), 
+gsap.set("#quote-home", {perspective: 400});
+
+tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out", stagger: 0.01}, "+=0");
+
+
+var tlBrief = gsap.timeline({delay: 1.5}), 
     mySplitTextNew = new SplitText("#brief", {type:"words,chars"}), 
     chars = mySplitTextNew.words; //an array of all the divs that wrap each character
     tlBrief.from(chars, {duration: 0.8, opacity: 0,  ease:"out", stagger: 0.01}, "+=0");
     gsap.set("#brief", {perspective: 400});
-
 
     var tlLabel = gsap.timeline({delay: 1.8}), 
     mySplitTextLabel = new SplitText("#openerLabel", {type:"words,chars"}), 
     chars = mySplitTextLabel.words; //an array of all the divs that wrap each character
     tlLabel.from(chars, {duration: 0.8, opacity: 0,  ease:"out", stagger: 0.01}, "+=0");
     gsap.set("#openerLabel", {perspective: 400});
-
-
-
 
 
     }
@@ -114,11 +113,12 @@ const About = ({ transitionStatus }) => {
         },
       });
 
+
                   // Set logo colour
                   gsap.set("path#Combined-Shape", { fill: "#fff" });
                   //
 
-      gsap.to(".dummy-start-scroll-about", {delay: 1, height: 0, duration: 0.5, ease:'back'});
+      gsap.to(".dummy-start-scroll-about", {delay: 0, height: 0, duration: 1.5, ease:'back'});
 
       gsap.to(odd, {
         duration: 0.8,
@@ -145,7 +145,7 @@ const About = ({ transitionStatus }) => {
   useEffect(() => {
     if (transitionStatus === 'exiting') {
       console.log('IM LEAVING!!')
-      gsap.set("#quote-two", {opacity: 1});
+      gsap.set("#quote-six", {opacity: 1});
       textfly(textRefs.current, -1);
     }
   }, [transitionStatus]);
@@ -154,27 +154,31 @@ const About = ({ transitionStatus }) => {
       
       <main className="container mx-auto px-2 md:px-0 text-white">
       <Helmet>
-      <body className="dark-theme home" />
+      <body className="dark-theme" />
       </Helmet>
       <div className="dummy-start-scroll-about"></div>
       <progress max="100" value="0"></progress>
         <Menu />
-        <div ref={(el) => (textRefs.current[1] = el)} className="w-full h-full flex justify-center items-center realizzazioni h-screen flex">
-          <div id="categories" className="leading-9 title w-full text-white-600 m-auto home-opener">
+        <div className="h-screen w-full flex justify-center items-center realizzazioni">
+          <div id="categories" className="leading-9 title w-full text-white">
           <p id="openerLabel" className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-12">Nutshell</p>
-  
           <p id="quote-home" className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden transform phrase">
-          <p className="mb-8 font-bold lg:text-9xl">Hello.</p>
-          <p className="lg:text-6xl">I am a Creative Director based in Dubai</p>
-          </p>
+        <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
+        <p className="lg:text-6xl">I am a Creative Director based in Dubai</p>
+        </p>
 
-          <p id="brief" className="text-gray-400 flex-1 pr-8 mt-8">
-            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            </p>
+
+            <p id="brief" ref={(el) => (textRefs.current[0] = el)} className="text-gray-400 flex-1 pr-8 mt-0">
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        </p>
+
 
             </div>
             </div>
-      
+    
+
+    
+
 
       </main>
       <Cursor />

@@ -20,7 +20,6 @@ export const Menu = () => {
     
     <>
     
-
       <div className="flex mb-20 justify-between menu">
       <div className="mr-8 text-md uppercase menuLeftWrapper">
             <a href="#" onClick={btnClick}>
@@ -44,7 +43,7 @@ export const Menu = () => {
               to="/"
               exit={{
                 length: 2,
-                delay: 1.4
+                delay: 0.4
               }}
               entry={{ length: 1, delay: 0 }}
               className=""
@@ -80,7 +79,19 @@ export const Menu = () => {
         <div className="flex">
           <div className="mr-8 text-md uppercase">
           <a className="downloadLink" href="#">
-          Resume
+          <TransitionLink
+              to="/about"
+              exit={{
+                length: 2,
+                delay: 0.3
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+            Resume  
+            </TransitionLink>
+          
             </a>
           </div>
 

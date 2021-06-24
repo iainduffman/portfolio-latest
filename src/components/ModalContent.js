@@ -18,7 +18,7 @@ function ModalContent(props) {
     mySplitText = new SplitText("#menu-items", {type:"words,chars"}), 
     chars = mySplitText.chars; //an array of all the divs that wrap each character
 
-    tlx.from(chars, {duration: 1.1, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
+    tlx.from(chars, {duration: 0.5, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
 
   }
 
@@ -42,7 +42,7 @@ function ModalContent(props) {
             </TransitionLink>
             </p>
 
-            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-purple-700"><TransitionLink
+            {/* <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-purple-700"><TransitionLink
               to="/contact"
               exit={{
                 length: 2,
@@ -54,7 +54,7 @@ function ModalContent(props) {
             >
               Botanical
             </TransitionLink>
-            </p>
+            </p> */}
 
             <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-blue-700"><TransitionLink
               to="/next"
