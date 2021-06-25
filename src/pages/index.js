@@ -162,15 +162,15 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="h-screen w-full flex justify-center items-center realizzazioni">
-          <div id="categories" className="leading-9 title w-full text-white">
+          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title w-full text-white">
           <p id="openerLabel" className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-12">Nutshell</p>
-          <p id="quote-home" className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden transform phrase">
+        <p id="quote-home" className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden transform phrase">
         <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
         <p className="lg:text-6xl">I am a Creative Director based in Dubai</p>
         </p>
 
 
-        <p id="brief" ref={(el) => (textRefs.current[0] = el)} className="text-gray-400 flex-1 pr-8 mt-0 lg:text-1xl">
+        <p id="brief" className="text-gray-400 flex-1 pr-8 mt-0 lg:text-1xl">
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
         </p>
 
