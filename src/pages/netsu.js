@@ -9,7 +9,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const intTag = 'chapstest';
+const intTag = 'netsu';
 
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
@@ -82,6 +82,10 @@ const About = ({ transitionStatus }) => {
 
     var tl = gsap.timeline({delay: 1}), 
     mySplitText = new SplitText(`#quote-${intTag}`, {type:"words,chars"}), 
+
+    
+    
+    
     chars = mySplitText.chars; //an array of all the divs that wrap each character
 
 gsap.set(`#quote-${intTag}`, {perspective: 400});
@@ -151,14 +155,14 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
         <div className="w-full h-full flex justify-center items-center realizzazioni">
           <div id="categories" className="leading-9 title w-full md:w-1/2 text-white">
           <p id={`quote-${intTag}`} className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden uppercase transform phrase">
-          __The scientific storytellig of the barber
+          __Open fires and spice on the mind.
           </p>
             <p ref={(el) => (textRefs.current[0] = el)} id="copy" className="overflow-hidden mt-8 text-gray-400" >Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
             </p>
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default double mt-16 mb-16"><StaticImage src="../images/DSC02081.jpg" alt="A dinosaur" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default double mt-16 mb-16"><StaticImage src="../images/DSC02411-2.jpg" alt="A dinosaur" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
@@ -176,7 +180,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02070.jpg" alt="A dinosaur" /></section>
+            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02478.jpg" /></section>
 
             <p className="text-gray-400">
 
@@ -196,7 +200,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
           </div>
         </div>
 
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC02079.jpg" alt="A dinosaur" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC02478.jpg" alt="A dinosaur" /></section>
 
         <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC02080.jpg" alt="A dinosaur" /></section>
 
