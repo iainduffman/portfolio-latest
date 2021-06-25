@@ -170,7 +170,7 @@ var tlBrief = gsap.timeline({delay: 1.5}),
         </p>
 
 
-            <p id="brief" ref={(el) => (textRefs.current[0] = el)} className="text-gray-400 flex-1 pr-8 mt-0">
+        <p id="brief" ref={(el) => (textRefs.current[0] = el)} className="text-gray-400 flex-1 pr-8 mt-0 lg:text-1xl">
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
         </p>
 
