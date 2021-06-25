@@ -7,6 +7,9 @@ import { SplitText } from "../components/SplitText";
 import { StaticImage } from "gatsby-plugin-image";
 
 
+const intTag = 'next-test';
+
+
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
   const textfly = (textRefs, direction) => {
@@ -70,10 +73,10 @@ const About = ({ transitionStatus }) => {
       gsap.to("path#Combined-Shape", { fill: "#000", delay: 1 });
       //
 
-      gsap.set(".dummy-start-scroll-next", {height: 0});
+      gsap.set(`.dummy-start-scroll-${intTag}`, {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
-      tlprogressbardummyshow.to(".dummy-start-scroll-next", {height: 70, duration: 1, ease:"out"});
+      tlprogressbardummyshow.to(`.dummy-start-scroll-${intTag}`, {height: 70, duration: 1, ease:"out"});
 
     var tl3 = gsap.timeline({delay: 1}), 
     mySplitText = new SplitText("#quote-three", {type:"words,chars"}), 
@@ -99,7 +102,7 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
                   // Set logo colour
                   gsap.set("path#Combined-Shape", { fill: "#000" });
                   //
-      gsap.to(".dummy-start-scroll-next", {delay: 1, height: 0, duration: 0.5, ease:'back'});
+                  gsap.to(`.dummy-start-scroll-${intTag}`, {delay: 1, height: 0, duration: 0.5, ease:'back'});
 
 
       gsap.to(odd, {
@@ -138,7 +141,7 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
       <Helmet>
       <body className="light-theme" />
       </Helmet>
-      <div className="dummy-start-scroll-next"></div>
+      <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="w-full h-full flex justify-center items-center realizzazioni">

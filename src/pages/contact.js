@@ -9,6 +9,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const intTag = 'contact-test';
+
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
   const textfly = (textRefs, direction) => {
@@ -73,10 +75,10 @@ const About = ({ transitionStatus }) => {
       gsap.to("path#Combined-Shape", { fill: "#000", delay: 1 });
       //
 
-      gsap.set(".dummy-start-scroll-contact", {height: 0});
+      gsap.set(`.dummy-start-scroll-${intTag}`, {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
-      tlprogressbardummyshow.to(".dummy-start-scroll-contact", {height: 70, duration: 1, ease:"out"});
+      tlprogressbardummyshow.to(`.dummy-start-scroll-${intTag}`, {height: 70, duration: 1, ease:"out"});
 
 
     var tl3 = gsap.timeline({delay: 1}), 
@@ -104,7 +106,7 @@ const About = ({ transitionStatus }) => {
                   gsap.set("path#Combined-Shape", { fill: "#000" });
                   //
 
-      gsap.to(".dummy-start-scroll-contact", {delay: 1, height: 0, duration: 0.5, ease:'back'});
+                  gsap.to(`.dummy-start-scroll-${intTag}`, {delay: 1, height: 0, duration: 0.5, ease:'back'});
 
 
       gsap.to(odd, {
@@ -143,7 +145,7 @@ const About = ({ transitionStatus }) => {
       <Helmet>
       <body className="light-theme" />
       </Helmet>
-      <div className="dummy-start-scroll-contact"></div>
+      <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="w-full h-full flex justify-center items-center realizzazioni">

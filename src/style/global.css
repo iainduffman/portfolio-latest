@@ -278,7 +278,7 @@ progress {
   background: transparent;
 }
 
-.dummy-start-scroll-contact, .dummy-start-scroll-about, .dummy-start-scroll-last, .dummy-start-scroll-next, .dummy-start-scroll-chaps, .dummy-start-scroll-lastone {
+#dummyScroller, .dummy-start-scroll-contact, .dummy-start-scroll-about, .dummy-start-scroll-last, .dummy-start-scroll-next, .dummy-start-scroll-chaps, .dummy-start-scroll-lastone {
   z-index: 999;
   background: red;
   position: fixed;

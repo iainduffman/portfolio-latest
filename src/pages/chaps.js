@@ -9,6 +9,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const intTag = 'chapstest';
+
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
   const textfly = (textRefs, direction) => {
@@ -72,10 +74,10 @@ const About = ({ transitionStatus }) => {
       gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
       //
 
-      gsap.set(".dummy-start-scroll-chaps", {height: 0});
+      gsap.set(`.dummy-start-scroll-${intTag}`, {height: 0});
 
       var tlprogressbardummyshow = gsap.timeline({delay: 1.5});
-      tlprogressbardummyshow.to(".dummy-start-scroll-chaps", {height: 70, duration: 1, ease:"out"});
+      tlprogressbardummyshow.to(`.dummy-start-scroll-${intTag}`, {height: 70, duration: 1, ease:"out"});
 
 
     var tl = gsap.timeline({delay: 1}), 
@@ -105,7 +107,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
                   gsap.set("path#Combined-Shape", { fill: "#fff" });
                   //
 
-      gsap.to(".dummy-start-scroll-chaps", {delay: 1, height: 0, duration: 0.5, ease:'back'});
+      gsap.to(`.dummy-start-scroll-${intTag}`, {delay: 1, height: 0, duration: 0.5, ease:'back'});
 
       gsap.to(odd, {
         duration: 0.8,
@@ -143,7 +145,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
       <Helmet>
       <body className="dark-theme" />
       </Helmet>
-      <div className="dummy-start-scroll-chaps"></div>
+      <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="w-full h-full flex justify-center items-center realizzazioni">
