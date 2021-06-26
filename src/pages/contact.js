@@ -159,7 +159,7 @@ const About = ({ transitionStatus }) => {
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/bottle.jpg" alt="A dinosaur" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/bottle.jpg" alt="" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
@@ -177,7 +177,7 @@ const About = ({ transitionStatus }) => {
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/bottle2cropped.jpg" alt="A dinosaur" /></section>
+            <section className="default mt-16 mb-16"><StaticImage src="../images/bottle2cropped.jpg" alt="" /></section>
 
             <p className="text-gray-400">
 
@@ -197,7 +197,7 @@ const About = ({ transitionStatus }) => {
           </div>
         </div>
 
-        <section className="default mt-16 mb-16"><StaticImage src="../images/hand.jpg" alt="A dinosaur" /></section>
+        <section className="default mt-16 mb-16"><StaticImage src="../images/hand.jpg" alt="" /></section>
 
       <div className="w-full h-full flex justify-center items-center realizzazioni">
       <div id="categories" className="leading-9 title w-full md:w-1/2">

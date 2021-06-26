@@ -157,7 +157,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default double mt-16 mb-16"><StaticImage src="../images/DSC01883.jpg" alt="A dinosaur" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default double mt-16 mb-16"><StaticImage src="../images/DSC01883.jpg" alt="" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
@@ -175,7 +175,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC01856-3.jpg" alt="A dinosaur" /></section>
+            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC01856-3.jpg" alt="" /></section>
 
             <p className="text-gray-400">
 
@@ -195,11 +195,11 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
           </div>
         </div>
 
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC01879.jpg" alt="A dinosaur" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC01879.jpg" alt="" /></section>
 
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC01839.jpg" alt="A dinosaur" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC01839.jpg" alt="" /></section>
 
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC01856-4.jpg" alt="A dinosaur" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC01856-4.jpg" alt="" /></section>
 
       <div className="w-full h-full flex justify-center items-center realizzazioni">
       <div id="categories" className="leading-9 title w-full md:w-1/2">

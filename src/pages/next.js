@@ -155,7 +155,7 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/ui.jpg" alt="A dinosaur" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/ui.jpg" alt="" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
@@ -173,7 +173,7 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/skincare.jpg" alt="A dinosaur" /></section>
+            <section className="default mt-16 mb-16"><StaticImage src="../images/skincare.jpg" alt="" /></section>
 
             <p className="text-gray-500">
 
@@ -193,7 +193,7 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
           </div>
         </div>
 
-        <section className="default mt-16 mb-16"><StaticImage src="../images/last.jpg" alt="A dinosaur" /></section>
+        <section className="default mt-16 mb-16"><StaticImage src="../images/last.jpg" alt="" /></section>
 
       <div className="w-full h-full flex justify-center items-center realizzazioni">
       <div id="categories" className="leading-9 title w-full md:w-1/2">
@@ -201,9 +201,9 @@ tl3.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out"
       <p class="mb-16 text-gray-500">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
       </div>
       </div>
-      <section className="default double mb-16"><StaticImage src="../images/b1.jpg" alt="A dinosaur" /></section>
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/b2.jpg" alt="A dinosaur" /></section>
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/b3.jpg" alt="A dinosaur" /></section>
+      <section className="default double mb-16"><StaticImage src="../images/b1.jpg" alt="" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/b2.jpg" alt="" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/b3.jpg" alt="" /></section>
       </main>
 
       <Cursor />
