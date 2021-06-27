@@ -198,6 +198,10 @@ svg.menuLeftIcon {
 
     transition-property: opacity, background-color, transform, border;
   }
+
+  .home-bio-container {
+    margin-top: -176px;
+  }
   
   .cursor {
     width: 140px;
