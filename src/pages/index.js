@@ -164,7 +164,7 @@ var tlBrief = gsap.timeline({delay: 1.5}),
         <div className="h-screen w-full flex justify-center items-center realizzazioni home-bio-container">
           <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title w-full text-white">
           <p id="openerLabel" className="mb-2 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-12">Nutshell</p>
-        <p id="quote-home" className="list-none text-6xl md:text-6xl lg:text-8xl font-thin relative overflow-hidden transform phrase">
+        <p id="quote-home" className="list-none text-6xl font-thin relative overflow-hidden transform phrase">
         <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
         <p className="lg:text-6xl">I am a Creative Director based in Dubai</p>
         </p>
