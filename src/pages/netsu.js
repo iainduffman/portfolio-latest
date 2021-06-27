@@ -204,9 +204,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
 
         <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC02401.jpg" alt="" /></section>
 
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC02075-2.jpg" alt="" /></section>
-
-        <section className="default double mt-16 mb-16"><StaticImage src="../images/DSC02069.jpg" alt="" /></section>
+        <section className="default double mt-16 mb-16"><StaticImage src="../images/dsc02439.jpg" alt="" /></section>
 
       <div className="w-full h-full flex justify-center items-center realizzazioni">
       <div id="categories" className="leading-9 title w-full md:w-1/2">
