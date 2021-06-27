@@ -162,7 +162,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default double mt-16 mb-16"><StaticImage src="../images/DSC02411-2.jpg" alt="" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default double mt-16 mb-16"><StaticImage src="../images/DSC02411-3.jpg" alt="" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
