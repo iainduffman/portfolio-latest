@@ -139,6 +139,19 @@ function ModalContent(props) {
               Botanical
             </TransitionLink>
             </p>
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
+              to="/masti"
+              exit={{
+                length: 2,
+                delay: 1.4
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+              Masti
+            </TransitionLink>
+            </p>
 
         
         <p className="text-opacity-70 text-white list-none text-6xl md:text-6xl lg:text-2xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700">About</p>
