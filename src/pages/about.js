@@ -157,9 +157,9 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
             </div>
             </div>
       
-            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC02126new.jpg" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC06080.jpg" /></section>
 
-            <section ref={(el) => (textRefs.current[2] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC02131new.jpg" /></section>
+            <section ref={(el) => (textRefs.current[2] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC04680.jpg" /></section>
 
             <div className="w-full h-full flex justify-center items-center realizzazioni">
             <div id="categories" className="leading-9 title w-full md:w-1/2">
