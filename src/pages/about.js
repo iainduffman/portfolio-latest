@@ -177,7 +177,7 @@ tl.from(chars, {duration: 0.8, y:180, transformOrigin:"0% 50% -50",  ease:"out",
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02140.jpg" alt="" /></section>
+            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC06136.jpg" alt="" /></section>
 
             <p className="text-gray-400">
 
