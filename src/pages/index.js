@@ -32,7 +32,7 @@ const About = ({ transitionStatus }) => {
 
             gsap.to(".vidContainer", {
               duration: 0.6,
-              delay: 3,
+              delay: 4,
               ease: 'Power1.easeInOut',
               opacity: 0.2
             })
@@ -186,17 +186,16 @@ var tlBrief = gsap.timeline({delay: 1.5}),
         <div className="vidContainer">
         <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/lskpapkgr5lsssp/FX3%20Slow%20Mo%20Test_12.mp4?raw=1"></video>
         </div>
-        <div className="h-screen w-full flex justify-center items-center realizzazioni home-bio-container">
-          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-full text-white">
-          <p id="openerLabel" className="mb-0 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-12">Nutshell</p>
+        <div className="h-screen w-full flex justify-left items-center realizzazioni home-bio-container">
+          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-1/2 text-white">
         <p id="quote-home" className="list-none text-6xl font-thin relative overflow-hidden transform phrase">
         <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
-        <p className="lg:text-6xl">I am a Creative Director based in Dubai</p>
+        <p className="lg:text-6xl mb-2">I am a Creative Director</p>
         </p>
 
         <div class="descContainer">
         <p id="brief" className="text-gray-400 flex-1 pr-8 mt-0 md:text-base lg:text-base lg:leading-8 text-lg lg:text-lg">
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Tst xyz. Cras justo odio, dapibus ac facilisis in, egestas eget quam.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
         </p>
         </div>
 
