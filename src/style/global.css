@@ -25,6 +25,22 @@ body {
   visibility: hidden;
 }
 
+.vidContainer {
+opacity: 0;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title-home {
+  opacity: 0;
+}
+
   .modal__scrim {
     position: fixed;
     top: 0;

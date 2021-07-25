@@ -25,6 +25,18 @@ const About = ({ transitionStatus }) => {
     });
     if (direction === 1) {
 
+
+            // Set logo colour
+            gsap.set(".title-home", { opacity: "1" });
+            //
+
+            gsap.to(".vidContainer", {
+              duration: 0.6,
+              delay: 3,
+              ease: 'Power1.easeInOut',
+              opacity: 0.2
+            })
+
       gsap.from(even, {
         duration: 1,
         y: 100 * direction,
@@ -70,9 +82,11 @@ const About = ({ transitionStatus }) => {
       }
       });
 
+
       // Tween logo colour
       gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
       //
+
 
       gsap.set(`.dummy-start-scroll-${intTag}`, {height: 0});
 
@@ -116,9 +130,17 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       });
 
 
-                  // Set logo colour
-                  gsap.set("path#Combined-Shape", { fill: "#fff" });
-                  //
+      gsap.to(".vidContainer", {
+        duration: 0.3,
+        delay: 0,
+        ease: 'Power1.easeInOut',
+        opacity: 0
+      })
+
+
+      // Set logo colour
+      gsap.set("path#Combined-Shape", { fill: "#fff" });
+      //
 
       gsap.to(`.dummy-start-scroll-${intTag}`, {delay: 0, height: 0, duration: 1.5, ease:'back'});
 
@@ -161,8 +183,11 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu />
+        <div className="vidContainer">
+        <video class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/lskpapkgr5lsssp/FX3%20Slow%20Mo%20Test_12.mp4?raw=1" autoplay loop muted playsinline></video>
+        </div>
         <div className="h-screen w-full flex justify-center items-center realizzazioni home-bio-container">
-          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title w-full text-white">
+          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-full text-white">
           <p id="openerLabel" className="mb-0 text-gray-500 list-none text-1xl md:text-1xl lg:text-1xl font-thin relative overflow-hidden uppercase transform phrase mt-12">Nutshell</p>
         <p id="quote-home" className="list-none text-6xl font-thin relative overflow-hidden transform phrase">
         <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
