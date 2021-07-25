@@ -99,6 +99,24 @@ function ModalContent(props) {
               Chaps &amp; Co
             </TransitionLink>
             </p>
+
+
+
+            <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
+              to="/lastone"
+              exit={{
+                length: 2,
+                delay: 1.4
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+              Etihad Airlines
+            </TransitionLink>
+            </p>
+
+
             <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-pink-700"><TransitionLink
               to="/masti"
               exit={{
