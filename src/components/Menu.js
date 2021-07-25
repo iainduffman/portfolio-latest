@@ -3,7 +3,9 @@ import TransitionLink from 'gatsby-plugin-transition-link';
 import { StaticImage } from "gatsby-plugin-image";
 import Drawer from "./Drawer";
 import IconBlack from "../images/artboard-logo.inline.svg";
+import "/src/style/global.css"
 import MenuLeft from "../images/burger.inline.svg";
+
 
 export const Menu = () => {
 
@@ -15,10 +17,13 @@ export const Menu = () => {
 
     setModal(true);
   };
+
+  
   
   return (
     
     <>
+
     
       <div className="flex mb-20 justify-between menu">
       <div className="mr-8 text-md uppercase menuLeftWrapper">

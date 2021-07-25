@@ -8,6 +8,9 @@ html,body {
     cursor: none
   }
 
+body {
+  background: #000;
+}
 /* Modal test */
 
 

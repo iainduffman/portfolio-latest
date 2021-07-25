@@ -16,9 +16,9 @@ function ModalContent(props) {
 
     var tlx = gsap.timeline({delay: 0.3}), 
     mySplitText = new SplitText("#menu-items", {type:"words,chars"}), 
-    chars = mySplitText.chars; //an array of all the divs that wrap each character
+    chars = mySplitText.words; //an array of all the divs that wrap each character
 
-    tlx.from(chars, {duration: 0.5, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
+    tlx.from(chars, {duration: 1, y:180, transformOrigin:"0% 50% -50", ease:"out", stagger: 0.01}, "+=0");
 
   }
 
