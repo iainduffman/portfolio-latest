@@ -44,7 +44,7 @@ const About = ({ transitionStatus }) => {
         delay: 0.9,
         ease: 'power4.inOut',
         stagger: {
-          amount: 0.3,
+          amount: 0.4,
         },
       });
 
@@ -184,7 +184,7 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="vidContainer">
-        <video class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/lskpapkgr5lsssp/FX3%20Slow%20Mo%20Test_12.mp4?raw=1" autoplay loop muted playsinline></video>
+        <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/lskpapkgr5lsssp/FX3%20Slow%20Mo%20Test_12.mp4?raw=1"></video>
         </div>
         <div className="h-screen w-full flex justify-center items-center realizzazioni home-bio-container">
           <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-full text-white">
