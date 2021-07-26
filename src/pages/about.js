@@ -179,6 +179,7 @@ const About = ({ transitionStatus }) => {
       <Helmet>
       <body className="dark-theme" />
       </Helmet>
+      <div className="bgScollPiece"></div>
       <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu/>

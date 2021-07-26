@@ -362,6 +362,17 @@ transition:color 0.5s ease;
 
 }
 
+.bgScollPiece {
+  position: absolute;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 500px;
+  background: #fff;
+  opacity: 0.1;
+  top: 1000px;
+
+}
+
 .line {
   background: transparent;
   height: 1px;
