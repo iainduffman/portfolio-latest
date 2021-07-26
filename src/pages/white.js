@@ -23,6 +23,18 @@ const About = ({ transitionStatus }) => {
       }
     });
 
+    var action = gsap.set('.article-header-cont', {position:'fixed', zIndex: 3000, width: '512px', top: '78px', duration: 0.4, paused:true});
+  
+    ScrollTrigger.create({
+      trigger: ".left-quote-col",
+      start: "top 90px",
+    
+      onEnter: () => action.play(),
+      onLeave: () => action.reverse(),
+      onLeaveBack: () => action.reverse(),
+      onEnterBack: () => action.reverse(),
+      markers:false
+    });
 
 
 
@@ -51,8 +63,6 @@ const About = ({ transitionStatus }) => {
         stagger: {
           amount: 0.3,
         },
-        
-
       });
 
       gsap.to(document.body, {
@@ -145,18 +155,7 @@ const About = ({ transitionStatus }) => {
   }, [transitionStatus]);
 
 
-  var action = gsap.set('.article-header-cont', {position:'fixed', zIndex: 3000, width: '512px', top: '78px', duration: 0.4, paused:true});
-  
-  ScrollTrigger.create({
-    trigger: ".left-quote-col",
-    start: "top 90px",
 
-    onEnter: () => action.play(),
-    onLeave: () => action.reverse(),
-    onLeaveBack: () => action.reverse(),
-    onEnterBack: () => action.reverse(),
-    markers:false
-  });
   return (
     <>
       
