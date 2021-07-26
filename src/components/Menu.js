@@ -25,7 +25,8 @@ export const Menu = () => {
     <>
 
     
-      <div className="flex mb-20 justify-between menu">
+      <div className="line"></div>
+      <div className="flex mb-32 justify-between menu">
       <div className="mr-8 text-md uppercase menuLeftWrapper">
             <a href="#" onClick={btnClick}>
 

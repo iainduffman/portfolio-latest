@@ -246,6 +246,9 @@ transition: all 1s ease;
 transition-property: opacity;
 }
 
+
+
+
 .phrase div, .menu-item-line {
   overflow: hidden;
 }
@@ -357,6 +360,25 @@ transition:color 0.5s ease;
 
 .dummy-start-scroll-next {
 
+}
+
+.line {
+  background: transparent;
+  height: 1px;
+  top: 148px;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  position: relative;
+  opacity: 1;
+  transition: all 150ms ease;
+  transition-property: opacity, background-color, transform, border;
+  transition-delay: 0s;
+}
+
+
+.tl-wrapper-status--exiting .line {
+  opacity: 0;
 }
 
 .hide-images {

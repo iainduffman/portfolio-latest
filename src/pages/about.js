@@ -12,9 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const intTag = 'emirates';
 
-
-
-
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
   const textfly = (textRefs, direction) => {
@@ -44,7 +41,16 @@ const About = ({ transitionStatus }) => {
 
     if (direction === 1) {
 
+
       gsap.set(`.littleLabel-${intTag}`, {opacity: 0});
+
+      gsap.to('.line', {
+        duration: 0.6,
+        delay: 1,
+        ease: 'Power1.easeInOut',
+        backgroundColor: 'rgb(41, 41, 41)'
+      })
+   
 
       gsap.from(even, {
         duration: 1,

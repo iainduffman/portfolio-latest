@@ -30,6 +30,14 @@ const About = ({ transitionStatus }) => {
             gsap.set(".title-home", { opacity: "1" });
             //
 
+
+            gsap.to('.line', {
+              duration: 0.6,
+              delay: 1,
+              ease: 'Power1.easeInOut',
+              backgroundColor: 'rgb(41, 41, 41)'
+            })
+
             gsap.to(".vidContainer", {
               duration: 0.6,
               delay: 4,
@@ -190,7 +198,7 @@ var tlBrief = gsap.timeline({delay: 1.5}),
           <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-1/2 text-white">
         <p id="quote-home" className="list-none text-6xl font-thin relative overflow-hidden transform phrase">
         <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
-        <p className="lg:text-6xl mb-2">I am a Creative Director</p>
+        <p className="lg:text-6xl mb-2">Leading Title Line</p>
         </p>
 
         <div class="descContainer">

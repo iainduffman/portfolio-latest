@@ -43,6 +43,13 @@ const About = ({ transitionStatus }) => {
 
       gsap.set(`.littleLabel-${intTag}`, {opacity: 0});
 
+      gsap.to('.line', {
+        duration: 0.6,
+        delay: 1,
+        ease: 'Power1.easeInOut',
+        backgroundColor: 'rgb(95 94 94 / 15%)'
+      })
+
       gsap.from(even, {
         duration: 1,
         y: 100 * direction,
