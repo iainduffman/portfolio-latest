@@ -28,15 +28,7 @@ const About = ({ transitionStatus }) => {
 
             // Set logo colour
             gsap.set(".title-home", { opacity: "1" });
-            //
-
-            gsap.to(".vidContainer", {
-              duration: 0.6,
-              delay: 4,
-              ease: 'Power1.easeInOut',
-              opacity: 0.2
-            })
-
+          
       gsap.from(even, {
         duration: 1,
         y: 100 * direction,
@@ -58,8 +50,6 @@ const About = ({ transitionStatus }) => {
         stagger: {
           amount: 0.3,
         },
-        
-
       });
 
       gsap.to(document.body, {
@@ -81,7 +71,6 @@ const About = ({ transitionStatus }) => {
         end: "bottom bottom",
       }
       });
-
 
       // Tween logo colour
       gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
@@ -109,12 +98,6 @@ var tlBrief = gsap.timeline({delay: 1.5}),
     tlBrief.from(chars, {duration: 0.8, opacity: 0,  ease:"out", stagger: 0.01}, "+=0");
     gsap.set("#brief", {perspective: 400});
 
-    var tlLabel = gsap.timeline({delay: 1.8}), 
-    mySplitTextLabel = new SplitText("#openerLabel", {type:"words,chars"}), 
-    chars = mySplitTextLabel.words; //an array of all the divs that wrap each character
-    tlLabel.from(chars, {duration: 0.8, opacity: 0,  ease:"out", stagger: 0.01}, "+=0");
-    gsap.set("#openerLabel", {perspective: 400});
-
 
     }
     if (direction === -1) {
@@ -129,13 +112,6 @@ var tlBrief = gsap.timeline({delay: 1.5}),
         },
       });
 
-
-      gsap.to(".vidContainer", {
-        duration: 0.3,
-        delay: 0,
-        ease: 'Power1.easeInOut',
-        opacity: 0
-      })
 
 
       // Set logo colour
@@ -183,9 +159,6 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu />
-        <div className="vidContainer">
-        <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/lskpapkgr5lsssp/FX3%20Slow%20Mo%20Test_12.mp4?raw=1"></video>
-        </div>
         <div className="h-screen w-full flex justify-left items-center realizzazioni home-bio-container">
           <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-1/2 text-white">
         <p id="quote-home" className="list-none text-6xl font-thin relative overflow-hidden transform phrase">
