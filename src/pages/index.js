@@ -192,7 +192,7 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="vidContainer">
-        <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/lskpapkgr5lsssp/FX3%20Slow%20Mo%20Test_12.mp4?raw=1"></video>
+        <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/67j9kxntrlan6wu/NewVid-Trimmed.mp4?raw=1"></video>
         </div>
         <div className="h-screen w-full flex justify-left items-center realizzazioni home-bio-container">
           <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-1/2 text-white">
@@ -202,7 +202,7 @@ var tlBrief = gsap.timeline({delay: 1.5}),
         </p>
 
         <div class="descContainer">
-        <p id="brief" className="text-gray-400 flex-1 pr-8 mt-0 md:text-base lg:text-base lg:leading-8 text-lg lg:text-lg">
+        <p id="brief" className="text-gray-400 text-xs flex-1 pr-8 mt-0 md:text-sm lg:leading-6">
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
         </p>
         </div>

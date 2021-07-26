@@ -42,7 +42,7 @@ export const Menu = () => {
 
 
       
-        <div className="flex">
+        <div className="flex id-logo">
           <div className="mr-8 text-md uppercase">
 
           <TransitionLink
