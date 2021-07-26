@@ -86,7 +86,7 @@ export const Menu = () => {
           <a className="downloadLink" href="#">
             
           <TransitionLink
-              to="/about"
+              to="/white"
               exit={{
                 length: 2,
                 delay: 1.4

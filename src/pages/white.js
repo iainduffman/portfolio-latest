@@ -8,7 +8,7 @@ import { ScrollTrigger } from "../components/ScrollTrigger";
 import { StaticImage } from "gatsby-plugin-image";
 
 
-const intTag = 'emirates';
+const intTag = 'white';
 
 const About = ({ transitionStatus }) => {
   let textRefs = useRef([]);
@@ -59,7 +59,7 @@ const About = ({ transitionStatus }) => {
         duration: 0.6,
         delay: 1,
         ease: 'Power1.easeInOut',
-        backgroundColor: '#000000'
+        backgroundColor: '#cccccc'
       })
 
       gsap.to('progress', {
@@ -76,7 +76,7 @@ const About = ({ transitionStatus }) => {
       });
 
       // Tween logo colour
-      gsap.to("path#Combined-Shape", { fill: "#fff", delay: 1 });
+      gsap.to("path#Combined-Shape", { fill: "#000", delay: 1 });
       //
 
       // Fade in work title label
@@ -109,15 +109,9 @@ const About = ({ transitionStatus }) => {
         },
       });
 
-            // Fade in work title label
-            gsap.to(`.littleLabel-${intTag}`, { opacity: 0, delay: 0, duration: 0.3 });
-            //
-
-
-      // Set logo colour
-      gsap.set("path#Combined-Shape", { fill: "#fff" });
+      // Fade in work title label
+      gsap.to(`.littleLabel-${intTag}`, { opacity: 0, delay: 0, duration: 0.3 });
       //
-
 
       gsap.to(`.dummy-start-scroll-${intTag}`, {delay: 1, height: 0, duration: 0.5, ease:'back'});
 
@@ -168,7 +162,7 @@ const About = ({ transitionStatus }) => {
       
       <main className="container mx-auto px-2 md:px-0 text-white">
       <Helmet>
-      <body className="dark-theme" />
+      <body className="light-theme" />
       </Helmet>
       <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
@@ -176,11 +170,11 @@ const About = ({ transitionStatus }) => {
         <div className="w-full h-full flex justify-left realizzazioni">
           <div id="categories" className="leading-9 title w-1/3 text-red-600 left-quote-col">
           <div className="article-header-cont">
-          <p className={`littleLabel-${intTag} mb-0 font-medium text-1xl mb-8 text-xs`}>02 | Emirates Airlines</p>
+          <p className={`littleLabel-${intTag} mb-0 font-medium text-1xl mb-8 text-xs text-black`}>03 | Fast Fashion</p>
           <p id={`quote-${intTag}`} className="list-none text-6xl md:text-6xl lg:text-7xl font-thin relative overflow-hidden uppercase transform phrase article-header">
-          Meet the brand that thrives at <span className="text-white">35,000 Ft</span>
+          Intelligent connected fast fashion <span className="text-gray-400">On Demand</span>
           </p>
-          <p ref={(el) => (textRefs.current[0] = el)} id="copy" className="mt-4 overflow-hidden text-gray-400 text-xs leading-7" >Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          <p ref={(el) => (textRefs.current[0] = el)} id="copy" className="mt-4 overflow-hidden text-black text-xs leading-7" >Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
           </div>
           </div>
@@ -188,7 +182,7 @@ const About = ({ transitionStatus }) => {
 
             <div id="categories" className="leading-9 title w-2/3 pl-32 text-red-600">
 
-            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-6 mb-16"><StaticImage src="../images/DSC06080.jpg" /></section>
+            <section ref={(el) => (textRefs.current[1] = el)} className="default mt-6 mb-16"><StaticImage src="../images/ui.jpg" /></section>
 
             <section ref={(el) => (textRefs.current[2] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC04680.jpg" /></section>
 
