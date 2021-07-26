@@ -200,8 +200,8 @@ const About = ({ transitionStatus }) => {
 
             </div>
 
-            <section className="default mt-16 mb-16"><StaticImage src="../images/DSC06136.jpg" alt="" /></section>
-
+            
+            <section ref={(el) => (textRefs.current[4] = el)} className="default mt-16 mb-16"><StaticImage src="../images/DSC06136.jpg" /></section>
           
 
 <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02266-2.jpg" alt="" /></section>
