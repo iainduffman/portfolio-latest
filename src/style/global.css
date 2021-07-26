@@ -376,11 +376,16 @@ transition:color 0.5s ease;
   transition-delay: 0s;
 }
 
+.home .line {opacity: 0;}
+
 
 .tl-wrapper-status--exiting .line {
   opacity: 0;
 }
 
+
+.vidTopCover {background: #000; width: 100vw; height: 188px; position: fixed; top: 0; z-index: 3000; left: 0; right: 0;}
+.vidBottomCover {background: #000; width: 100vw; height: 188px; position: fixed; bottom: 0; z-index: 3000; left: 0; right: 0;}
 
 .flex.id-logo {
   position: relative;

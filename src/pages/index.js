@@ -186,13 +186,15 @@ var tlBrief = gsap.timeline({delay: 1.5}),
       
       <main className="container mx-auto px-2 md:px-0 text-white">
       <Helmet>
-      <body className="dark-theme" />
+      <body className="dark-theme home" />
       </Helmet>
       <div id="dummyScroller" className={`dummy-start-scroll-${intTag}`}></div>
       <progress max="100" value="0"></progress>
         <Menu />
         <div className="vidContainer">
-        <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/67j9kxntrlan6wu/NewVid-Trimmed.mp4?raw=1"></video>
+        <div className="vidTopCover"></div>
+        <div className="vidBottomCover"></div>
+        <video muted playsInline autoPlay loop class="h-full w-full uk-padding-large video" src="https://www.dropbox.com/s/67j9kxntrlan6wu/NewVid-Trimmed.mp4?raw=1"></video>
         </div>
         <div className="h-screen w-full flex justify-left items-center realizzazioni home-bio-container">
           <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-1/2 text-white">
