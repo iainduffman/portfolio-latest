@@ -394,10 +394,10 @@ section.default {
   background-color: rgb(39, 39, 39);
 }
 
-section.default.double {
+section.default-double {
   width: 100%;
-  /* height: 1000px; */
-  height: auto;
+  height: 1000px;
+  /* height: auto; */
   overflow: hidden;
   background-color: rgb(39, 39, 39);
 }

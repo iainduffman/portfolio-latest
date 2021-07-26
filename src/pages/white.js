@@ -213,7 +213,7 @@ const About = ({ transitionStatus }) => {
 
 <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02266-2.jpg" alt="" /></section>
         <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02250.jpg" alt="" /></section>
-        <section className="lastimage default mt-16 mb-16"><StaticImage src="../images/DSC02299.jpg" alt="" /></section>
+        <section className="default mt-16 mb-16"><StaticImage src="../images/DSC02299.jpg" alt="" /></section>
             
             </div>
 

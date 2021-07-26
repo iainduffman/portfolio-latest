@@ -72,7 +72,7 @@ function ModalContent(props) {
 
 
             <p className="text-white list-none text-6xl md:text-6xl lg:text-6xl font-thin relative overflow-hidden uppercase transform phrase hover:text-green-700"><TransitionLink
-              to="/last"
+              to="/blacky"
               exit={{
                 length: 2,
                 delay: 1.4

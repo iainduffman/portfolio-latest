@@ -40,7 +40,7 @@ const About = ({ transitionStatus }) => {
 
             gsap.to(".vidContainer", {
               duration: 0.6,
-              delay: 4,
+              delay: 3,
               ease: 'Power1.easeInOut',
               opacity: 0.2
             })
