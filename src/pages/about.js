@@ -31,7 +31,7 @@ const About = ({ transitionStatus }) => {
     ScrollTrigger.create({
       trigger: ".left-quote-col",
       start: "top 90px",
-  
+      end: "+=50000", // end after scrolling 500px beyond the start
       onEnter: () => action.play(),
       onLeave: () => action.reverse(),
       onLeaveBack: () => action.reverse(),
