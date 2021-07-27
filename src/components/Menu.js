@@ -84,7 +84,7 @@ export const Menu = () => {
 
         <div className="flex">
           <div className="mr-8 text-md uppercase">
-          <a className="downloadLink" href="#">
+          <a className="text-xs downloadLink" href="#">
             
           <TransitionLink
               to="/white"
@@ -97,6 +97,47 @@ export const Menu = () => {
               activeClassName=""
             >
             Resume  
+            </TransitionLink>
+          
+            </a>
+
+            
+          </div>
+
+          <div className="mr-8 text-md uppercase">
+          <a className="text-xs downloadLink" href="#">
+            
+          <TransitionLink
+              to="/white"
+              exit={{
+                length: 2,
+                delay: 1.4
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+            Contact  
+            </TransitionLink>
+          
+            </a>
+          </div>
+
+
+          <div className="mr-8 text-md uppercase">
+          <a className="text-xs downloadLink" href="#">
+            
+          <TransitionLink
+              to="/white"
+              exit={{
+                length: 2,
+                delay: 1.4
+              }}
+              entry={{ length: 1, delay: 0 }}
+              className=""
+              activeClassName=""
+            >
+            Projects  
             </TransitionLink>
           
             </a>
