@@ -42,7 +42,7 @@ const About = ({ transitionStatus }) => {
               duration: 0.6,
               delay: 3,
               ease: 'Power1.easeInOut',
-              opacity: 0.2
+              opacity: 0.1
             })
 
       gsap.from(even, {
@@ -195,16 +195,16 @@ var tlBrief = gsap.timeline({delay: 1.5}),
         <video muted playsInline autoPlay loop class="h-screen w-full uk-padding-large video" src="https://www.dropbox.com/s/67j9kxntrlan6wu/NewVid-Trimmed.mp4?raw=1"></video>
         </div>
         <div className="h-screen w-full flex justify-left items-center realizzazioni home-bio-container">
-          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-1/2 text-white">
+          <div ref={(el) => (textRefs.current[0] = el)} id="categories" className="leading-9 title-home w-full text-white">
+          <p id="brief" className="text-gray-400 text-xs flex-1 pr-8 mt-0 mb-2 md:text-sm lg:leading-6">
+        Show me the work
+        </p>
         <p id="quote-home" className="list-none text-6xl font-thin relative overflow-hidden transform phrase">
-        <p className="mb-0 font-bold lg:text-9xl">Hello.</p>
-        <p className="lg:text-6xl mb-2">Leading Title Line</p>
+        <p className="mb-0 font-bold lg:text-9xl">Design Director</p>
+        <p className="lg:text-6xl mb-2">I am a multi disciplinary design director <br></br> based in London and Dubai</p>
         </p>
 
         <div class="descContainer">
-        <p id="brief" className="text-gray-400 text-xs flex-1 pr-8 mt-0 md:text-sm lg:leading-6">
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        </p>
         </div>
 
 
