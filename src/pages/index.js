@@ -42,7 +42,7 @@ const About = ({ transitionStatus }) => {
               duration: 0.6,
               delay: 3,
               ease: 'Power1.easeInOut',
-              opacity: 0.1
+              opacity: 0.15
             })
 
       gsap.from(even, {
